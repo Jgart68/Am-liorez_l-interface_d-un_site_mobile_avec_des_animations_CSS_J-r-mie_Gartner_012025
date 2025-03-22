@@ -1,1 +1,20 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  font-family: "roboto", sans-serif;
+}
+
+h1 {
+  font-family: "shrikhand";
+  font-style: italic;
+}
+
+h2, h3 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
