@@ -27,8 +27,6 @@ h3 {
 body {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
   background-color: white;
 }
 
@@ -45,32 +43,35 @@ img {
 }
 
 header {
-  height: 63px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 100%;
-  margin: 20px 0 20px 0;
 }
 
-header h1 {
-  font-size: 36px;
+.logo-container {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 15px 0 15px 0;
-  margin-top: 20px;
 }
 
-form {
+.header-location {
+  height: 50px;
   background-color: lightgrey;
   width: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0 10px 0;
+  justify-content: center;
+  padding-left: 50px;
 }
 
 form input {
@@ -93,8 +94,6 @@ form input {
   align-items: center;
   gap: 20px;
   padding: 15px 0 15px 0;
-  margin: 15px 0 15px 0;
-  width: 100%;
   background-color: rgb(234, 234, 234);
 }
 
@@ -106,6 +105,14 @@ button {
   color: white;
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0 15px 0;
+}
+
 .fonctionnement h2 {
   display: flex;
   align-content: flex-start;
@@ -113,12 +120,14 @@ button {
 
 .restaurants {
   background-color: rgb(234, 234, 234);
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
-  padding: 15px 0 15px 0;
+  padding: 15px;
+}
+
+.restaurants_cards {
+  width: 100%;
 }
 
 .card {
@@ -149,9 +158,13 @@ button {
 }
 
 footer {
-  width: 100%;
+  height: 186px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: white;
   background-color: black;
+  padding: 15px;
 }
 
 footer a {
