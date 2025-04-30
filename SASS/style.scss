@@ -1,35 +1,16 @@
-@import "Base/Fonts/fonts" ;
-@import "Base/Général/general" ;
+@import "Base/Utils/_variables";
+@import "Base/Utils/_mixins";
+@import "Base/Layouts/_layouts";
+@import "Base/Layouts/header/_header";
+@import "Base/Layouts/footer/_footer";
+@import "Base/Pages/_home.scss" ;
+@import "Base/Fonts/_fonts" ;
+@import "Base/Général/_general" ;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 img {
     width: 100%;
     object-fit: cover;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.logo-container  {
-    width: 100%;
-    height: 63px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    background-color: white;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    padding: 15px 0 15px 0;
 }
 
 .header-location  {
@@ -54,41 +35,7 @@ form input {
     color: black;
 }
 
-.reservez {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-    padding: 50px 15px 50px 15px;
-    background-color: rgba(234, 234, 234, 1);
-}
 
-.reservez h2 {
-    padding: 0 50px 0 50px;
-}
-
-.reservez p {
-    color: rgba(53, 53, 53, 1);
-}
-
-button {
-    padding: 15px;
-    border-radius: 25px;
-    border: none;
-    background: linear-gradient(0deg,#9356DC, #FF79DA);
-    color: white;
-    margin-top: 15px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
-.fonctionnement {
-    padding: 50px 15px 50px 15px;
-}
-
-.fonctionnement h2 {
-    margin-bottom: 20px;
-}
 
 .fonctionnement_button {
     width: 100%;
@@ -160,24 +107,4 @@ button {
     display: flex;
     align-items: center;
     padding-left: 15px;
-}
-
-footer {
-    height: 186px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    background-color: black;
-    padding: 15px;
-}
-
-footer h1 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
 }
