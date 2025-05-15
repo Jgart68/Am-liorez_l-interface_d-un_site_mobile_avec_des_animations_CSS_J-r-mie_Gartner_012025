@@ -1,81 +1,21 @@
 @import "Base/Utils/_variables";
 @import "Base/Utils/_mixins";
 @import "Base/Layouts/_layouts";
+
 @import "Base/Layouts/header/_header";
 @import "Base/Layouts/footer/_footer";
 @import "Base/Pages/_home.scss" ;
+
 @import "Base/Fonts/_fonts" ;
 @import "Base/Components/button/_button" ;
 @import "Base/Général/_general" ;
 @import "Base/Restaurants/_style" ;
 
-img {
-    width: 100%;
-    object-fit: cover;
-}
+@import "Base/Utils/_variables" ;
+@import "Base/Utils/_functions" ;
+@import "Base/Utils/_mixins" ;
+@import "Base/Animation/_animation" ;
 
-.header-location  {
-    height: 50px;
-    background-color: lightgrey;
-    width: 100%;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 50px;
-        p {
-            display: flex;
-            gap: 20px;
-        }
-}
-
-form input {
-    border: none;
-    background-color: lightgrey;
-    gap: 17px;
-}
-
-::placeholder {
-    color: black;
-}
-
-
-
-.fonctionnement_button {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.step {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(234, 234, 234);
-    width: 95%;
-    padding: 20px 0 20px 0;
-    border-radius: 15px;
-    align-items: center;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        > p {
-            display: flex;
-            gap: 2rem;
-            padding-left: 2.5rem;
-        }
-}
-
-.step_nbr {
-    position: absolute;
-    color: white;
-    background-color: #9356DC;
-    border-radius: 25px;
-    padding: 6px 10px 6px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    margin-left: -3%;
-}
 
 .restaurants {
     background-color: rgba(234, 234, 234, 1);
@@ -103,7 +43,7 @@ form input {
 }
 
 .nouveau {
-    background-color: rgba(153, 226, 208, 1);
+    background-color: $tertiary-color;
     color: rgba(0, 135, 102, 1);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.405);
     border-radius: 3px;

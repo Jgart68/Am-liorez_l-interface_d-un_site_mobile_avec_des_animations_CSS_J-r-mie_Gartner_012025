@@ -11,17 +11,56 @@
         }
 }
 
-
-
-
 .reservez p {
     color: rgba(53, 53, 53, 1);
 }
 
 .fonctionnement {
-    padding: 50px 15px 50px 15px;
+    padding: 50px 15px 70px 15px;
+    .fa-solid {
+        color: rgba(126, 126, 126, 1);
+    }
+    .fa-store {
+        color: $primary-color;
+    }
 }
 
 .fonctionnement h2 {
     margin-bottom: 20px;
+}
+
+.fonctionnement_button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-left: 4px;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(234, 234, 234);
+    width: 95%;
+    padding: 20px 0 20px 0;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        > p {
+            display: flex;
+            gap: 2rem;
+            padding-left: 2.5rem;
+        }
+}
+
+.step_nbr {
+    position: absolute;
+    color: white;
+    background-color: $primary-color;
+    border-radius: 25px;
+    padding: 6px 10px 6px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: -3%;
 }
