@@ -1,10 +1,10 @@
 @import "Base/Utils/_variables";
 @import "Base/Utils/_mixins";
-@import "Base/Layouts/_layouts";
 
 @import "Base/Layouts/header/_header";
 @import "Base/Layouts/footer/_footer";
-@import "Base/Pages/_home.scss" ;
+@import "Base/Pages/_home" ;
+@import "Base/Pages/desktop/_desktop" ;
 
 @import "Base/Fonts/_fonts" ;
 @import "Base/Components/button/_button" ;
