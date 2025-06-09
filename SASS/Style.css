@@ -1,4 +1,3 @@
-@charset "UTF-8";
 header {
   display: flex;
   flex-direction: column;
@@ -320,7 +319,6 @@ img {
 .card-like label {
   cursor: pointer;
   display: inline-block;
-  /* quand on coche, on affiche le cœur plein */
 }
 .card-like label input.like-checkbox {
   display: none;
