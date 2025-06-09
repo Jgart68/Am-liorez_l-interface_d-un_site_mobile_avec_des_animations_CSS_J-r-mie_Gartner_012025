@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: flex;
   flex-direction: column;
@@ -276,6 +277,10 @@ img {
   font-weight: 700;
 }
 
+.fa-heart :active {
+  color: linear-gradient(0deg, #9356DC, #FF79DA);
+}
+
 .restaurants {
   background-color: rgb(234, 234, 234);
   display: flex;
@@ -310,6 +315,43 @@ img {
   position: absolute;
   padding: 5px 10px;
   margin: 3% 0 0 65%;
+}
+
+.card-like label {
+  cursor: pointer;
+  display: inline-block;
+  /* quand on coche, on affiche le cœur plein */
+}
+.card-like label input.like-checkbox {
+  display: none;
+}
+.card-like label .fa-stack {
+  line-height: 1 !important;
+  vertical-align: 0 !important;
+  position: relative;
+  width: 1.25em;
+  height: 1.25em;
+  display: inline-block;
+}
+.card-like label .fa-stack-1x {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.card-like label .outline-heart {
+  color: #000;
+}
+.card-like label .fill-heart {
+  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card-like label input.like-checkbox:checked + .fa-stack .fill-heart {
+  opacity: 1;
 }
 
 .card-content {
