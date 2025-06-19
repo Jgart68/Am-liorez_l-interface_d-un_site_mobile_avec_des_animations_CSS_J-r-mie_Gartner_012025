@@ -37,33 +37,74 @@
         font-weight: 500;
     }
     .card {
-        display: flex;
-        height: 69px;
-        padding: 10px 0;
-        border-radius: 15px;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        margin: 10px 0;
+    display: flex;
+    height: 69px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 10px 0;
+    overflow: hidden;
+    align-items: center;
+    padding-left: 15px;
+        &:hover {
+            cursor: pointer;
+        }
     }
     .card-content {
         width: 100%;
+        display: flex;
+        align-items: end;
+        padding: 0;
     }
+
     .card-txt {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 5px;
     }
+
     .card-txt p {
         font-size: 15px;
         font-weight: 300;
         display: flex;
         justify-content: space-between;
     }
+
+    .card-price {
+    font-weight: 700;
+    display: flex;
+    align-items: end;
+    padding-right: 15px;
+}
+
+    .checked-card {
+    display: none;
+    left: 59px;
+    position: relative;
+    transition: transform 330ms ease-in-out;
+    }
+
+    .card-checked {
+    background-color: #99E2D0;
+    height: 69px;
+    width: 59px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .checked {
+        height: 20px;
+        width: 20px;
+    }
+
     .menu-button {
         display: flex;
         justify-content: center;
         margin: 20px 0 10px 0;
     }
+    
     button {
         height: 50px;
         width: 55%;
@@ -71,6 +112,3 @@
     }
 }
 
-.card-price {
-    font-weight: 700;
-}

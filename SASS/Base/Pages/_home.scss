@@ -64,3 +64,77 @@
     font-weight: 500;
     margin-left: -3%;
 }
+
+.restaurants {
+    background-color: rgba(234, 234, 234, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px 50px 15px;
+}
+
+.restaurants_cards {
+    width: 100%;
+}
+
+.card {
+    height: 251px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px 0 20px 0;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.nouveau {
+    background-color: $tertiary-color;
+    color: rgba(0, 135, 102, 1);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.405);
+    border-radius: 3px;
+    position: absolute;
+    padding: 5px 10px;
+    margin: 3% 0 0 65%;
+}
+
+.card-like {
+  label {
+    cursor: pointer;
+    display: inline-block;
+    input.like-checkbox {
+      display: none;
+    }
+    .fa-stack {
+      line-height: 1 !important;
+      vertical-align: 0 !important;
+      position: relative;
+      width: 1.25em; height: 1.25em;
+      display: inline-block;
+    }
+    .fa-stack-1x {
+      position: absolute; top: 5px; left: 0;
+    }
+    .outline-heart {
+      color: #000;
+    }
+    .fill-heart {
+      background-image: linear-gradient(45deg, #9356DC, #FF79DA);
+      background-clip: text; -webkit-background-clip: text;
+      color: transparent; -webkit-text-fill-color: transparent;
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    input.like-checkbox:checked + .fa-stack .fill-heart {
+      opacity: 1;
+    }
+  }
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: space-between;
+}
